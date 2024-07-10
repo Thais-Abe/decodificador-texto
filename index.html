@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles.css/style.css">
     <title>Criptador/desincriptador de textos</title>
 </head>
 <body>
-    <div>
-    <textarea placeholder="digite o texto a ser criptografado aqui">
+    <main class="application">
+        
+    <div class="text">
+    <!-- <h1>Criptografe e descriptografe seus textos a hora que quiser =]</h1> -->
 
+    <textarea class="text__area" placeholder="digite o texto a ser criptografado aqui">
+        
     </textarea>
-    <button>Criptografar</button>
-    <button>Descriptografar</button>
+    <div class="buttons">
+    <button class="button" onclick="encrypt()">Criptografar</button>
+    <button class="button" onclick="descrypt()">Descriptografar</button>
     </div>
-    <div>
-
     </div>
+    <div class="image__womam">
+        <img src="assets/notFound.PNG" alt="a womam searching the text with a magnifying glass on her hand" />
+    </div>
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por Thais Cristina Abe</p>
+    </footer>
+    <script src="app.js" defer></script>
 </body>
 </html>
