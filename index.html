@@ -8,21 +8,24 @@
 </head>
 <body>
     <main class="application">
-        
-    <div class="text">
-    <!-- <h1>Criptografe e descriptografe seus textos a hora que quiser =]</h1> -->
-
-    <textarea class="text__area" placeholder="digite o texto a ser criptografado aqui">
-        
-    </textarea>
-    <div class="buttons">
-    <button class="button" onclick="encrypt()">Criptografar</button>
-    <button class="button" onclick="descrypt()">Descriptografar</button>
-    </div>
-    </div>
-    <div class="image__womam">
-        <img src="assets/notFound.PNG" alt="a womam searching the text with a magnifying glass on her hand" />
-    </div>
+        <div class="text">
+            <textarea id="inputText" class="text__area" placeholder="Digite o texto aqui"></textarea>
+            <div class="buttons">
+                <button class="button" onclick="encrypt(text)">Criptografar</button>
+                <button class="button" onclick="decrypt()">Descriptografar</button>
+            </div>
+            <div>
+                <h3>Texto Criptografado:</h3>
+                <textarea id="encryptedText" class="text__area" readonly></textarea>
+            </div>
+            <div>
+                <h3>Texto Descriptografado:</h3>
+                <textarea id="decryptedText" class="text__area" readonly></textarea>
+            </div>
+        </div>
+        <div class="image__womam">
+            <img src="assets/notFound.PNG" alt="a womam searching the text with a magnifying glass on her hand" />
+        </div>
     </main>
     <footer class="footer">
         <p>Desenvolvido por Thais Cristina Abe</p>
